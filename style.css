@@ -22,7 +22,7 @@
   --pop-peach: #ffa94d;
   --accent-ink: #141414;
 
-  --font-main: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-main: Helvetica, Arial, sans-serif;
 }
 
 [data-theme="dark"] {
@@ -106,7 +106,7 @@ body {
   body { padding-bottom: 44px; }
 }
 
-button, input, textarea {
+button, input, textarea, select {
   font-family: var(--font-main);
   color: inherit;
 }
