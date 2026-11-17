@@ -40,83 +40,52 @@
     </div>
   </header>
 
-  <!-- ==================== COMPACT RANDOM QUOTE STRIP ==================== -->
-  <section class="quote-banner-wrap" aria-label="Daily Quote">
-    <div class="container">
-      <div class="quote-strip">
-        <span class="tag-pill bg-coral">QUOTE</span>
-        <p id="randomQuoteText" class="quote-text"></p>
-        <div class="quote-actions">
-          <span id="randomQuoteAuthor" class="quote-author"></span>
-          <button id="speakQuoteBtn" class="icon-btn bg-sky" title="Listen" aria-label="Listen to quote">
-            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
-          </button>
-          <button id="newQuoteBtn" class="icon-btn bg-yellow" title="New Quote" aria-label="New quote">
-            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ==================== MAIN WORKSPACE ==================== -->
   <main class="container workspace">
 
     <!-- ==================== PAGE 00: HOME ==================== -->
     <section id="page-home" class="page active" aria-labelledby="hero-headline">
       <div class="hero-layout">
-        <!-- Left Hero Card -->
         <div class="poster-block">
           <div class="poster-meta-top">
-            <span class="tag-pill bg-yellow">CREATED BY GROUP 11</span>
-            <span class="tag-pill bg-lilac">SPEAKING &amp; VOCAB STUDIO</span>
+            <span class="tag-pill bg-yellow">GROUP 11 · ENGLISH LAB</span>
           </div>
 
+          <p class="hero-kicker">SPEAKING &amp; VOCABULARY STUDIO</p>
           <h1 id="hero-headline" class="mega-headline">
-            SPEAK<br />
-            BEYOND<br />
-            <span class="highlight-block bg-yellow">BASIC</span><br />
-            ENGLISH
+            SPEAK BEYOND<br />
+            <span class="highlight-block bg-yellow">BASIC</span> ENGLISH.
           </h1>
 
           <p class="poster-lead">
-            Practical speaking formulas for <strong>Units 09–14</strong>, expressive vocabulary,
-            daily idioms, short stories, and quick recall quizzes—kept clean and straight to the point.
+            Build confidence through practical speaking, expressive vocabulary,
+            and everyday conversations.
           </p>
 
           <div class="hero-actions">
-            <button class="brutal-btn bg-yellow" data-nav="units">
-              UNITS 09–14 →
+            <button class="brutal-btn bg-yellow hero-primary" data-nav="units">
+              EXPLORE UNITS 09–14 <span aria-hidden="true">→</span>
             </button>
-            <button class="brutal-btn bg-sky" data-nav="words">
-              16 RARE WORDS
-            </button>
-            <button class="brutal-btn bg-mint" data-nav="quiz">
-              QUICK QUIZ
-            </button>
+            <button class="brutal-btn bg-sky" data-nav="words">EXPLORE 16 WORDS</button>
+            <button class="brutal-btn hero-quiz-btn" data-nav="quiz">TAKE A QUICK QUIZ</button>
           </div>
-
-          <p class="poster-footnote">
-            *Real-world conversation patterns &amp; expressive vocabulary—zero boring grammar drills.
-          </p>
 
           <div class="tech-strip">
             <div>
-              <span class="tech-k">TEAM</span>
-              <span class="tech-v">GROUP 11</span>
+              <span class="tech-k">LEARNING PATH</span>
+              <span class="tech-v">6 SPEAKING UNITS</span>
             </div>
             <div>
-              <span class="tech-k">SYLLABUS</span>
-              <span class="tech-v">UNITS 09–14</span>
+              <span class="tech-k">VOCABULARY</span>
+              <span class="tech-v">16 EXPRESSIVE WORDS</span>
             </div>
             <div>
-              <span class="tech-k">MASTERED</span>
-              <span class="tech-v" id="homeMasteredStat">0 / 16 WORDS</span>
+              <span class="tech-k">YOUR PROGRESS</span>
+              <span class="tech-v" id="homeMasteredStat">0 / 16 MASTERED</span>
             </div>
           </div>
         </div>
 
-        <!-- Right Card: Spotlight Word -->
         <aside class="os-window wotd-window" aria-label="Featured Word">
           <div class="os-titlebar bg-sky">
             <div class="os-dots"><span></span><span></span><span></span></div>
@@ -134,13 +103,11 @@
 
           <div class="os-body">
             <div class="wotd-top-row">
-              <span id="spotlightCat" class="tag-pill bg-yellow">NOUN</span>
+              <span id="spotlightCat" class="tag-pill bg-yellow">NOUN // NATURE</span>
               <span id="spotlightIpa" class="ipa-tag">/ˈpet.rɪ.kɔːr/</span>
             </div>
-
             <h2 id="spotlightWord" class="wotd-display">PETRICHOR</h2>
             <p id="spotlightDef" class="wotd-definition"></p>
-
             <div class="upgrade-box">
               <div id="spotlightOld" class="upgrade-old"></div>
               <div id="spotlightNew" class="upgrade-new"></div>
@@ -149,10 +116,29 @@
         </aside>
       </div>
 
-      <!-- Units 09-14 Quick Access Grid -->
-      <div class="section-banner">
-        <span class="sec-num bg-yellow">SYLLABUS</span>
-        <h2>SPEAKING MODULES [UNITS 09–14]</h2>
+  <!-- ==================== DAILY QUOTE ==================== -->
+  <section class="quote-banner-wrap" aria-label="Daily Quote">
+    <div class="quote-strip">
+        <span class="tag-pill bg-coral">QUOTE</span>
+        <p id="randomQuoteText" class="quote-text"></p>
+        <div class="quote-actions">
+          <span id="randomQuoteAuthor" class="quote-author"></span>
+          <button id="speakQuoteBtn" class="icon-btn bg-sky" title="Listen" aria-label="Listen to quote">
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+          </button>
+          <button id="newQuoteBtn" class="icon-btn bg-yellow" title="New Quote" aria-label="New quote">
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+          </button>
+        </div>
+    </div>
+  </section>
+
+      <div class="home-section-heading">
+        <div>
+          <span class="section-eyebrow">YOUR LEARNING PATH</span>
+          <h2>Speaking modules</h2>
+        </div>
+        <span class="section-count">UNITS 09–14</span>
       </div>
 
       <div class="units-overview-grid">
@@ -164,27 +150,27 @@
         <button class="unit-mini-card" data-open-unit="10">
           <span class="unit-num bg-mint">UNIT 10</span>
           <strong>Story &amp; News Report</strong>
-          <span>Re-tell events &amp; 5W+1H news reporting</span>
+          <span>Retell events &amp; report the 5W+1H</span>
         </button>
         <button class="unit-mini-card" data-open-unit="11">
           <span class="unit-num bg-sky">UNIT 11</span>
           <strong>Recent Changes</strong>
-          <span>Compare past habits to present life</span>
+          <span>Compare past habits with present life</span>
         </button>
         <button class="unit-mini-card" data-open-unit="12">
           <span class="unit-num bg-coral">UNIT 12</span>
           <strong>Job Interview Hypotheticals</strong>
-          <span>“What if” scenarios &amp; neutral responses</span>
+          <span>Handle “what if” scenarios</span>
         </button>
         <button class="unit-mini-card" data-open-unit="13">
           <span class="unit-num bg-lilac">UNIT 13</span>
           <strong>Dealing with Complaints</strong>
-          <span>Sincere apologies &amp; showing sympathy</span>
+          <span>Apologize sincerely and show empathy</span>
         </button>
         <button class="unit-mini-card" data-open-unit="14">
           <span class="unit-num bg-peach">UNIT 14</span>
           <strong>Conflict Resolution</strong>
-          <span>Advice, arguments &amp; clear explanation</span>
+          <span>Give advice and explain clearly</span>
         </button>
       </div>
     </section>
